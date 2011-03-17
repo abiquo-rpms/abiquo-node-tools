@@ -1,14 +1,15 @@
 %define abiquo_basedir /opt/abiquo
 
 Name:     abiquo-node-tools
-Version: 1.7
-Release: 1%{?dist}%{?buildstamp}
+Version:  1.7.5
+Release:  1%{?dist}%{?buildstamp}
 Summary:  Abiquo Node Tools 
 Group:    Development/System 
 License:  Multiple 
 URL:      http://www.abiquo.com 
 Source:  %{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildArch: noarch
 
 %description
 Next Generation Cloud Management Solution
@@ -40,6 +41,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}
 
 %changelog
+* Thu Mar 17 2011 Sergio Rubio <srubio@abiquo.com> - 1.7.5-1
+- version bump
+- abiquo-node-check-state is now a python script
+- set arch to noarch
+
 * Mon Nov 22 2010 Sergio Rubio <srubio@abiquo.com> 1.7-1
 - Updated to upstream 1.7
 
