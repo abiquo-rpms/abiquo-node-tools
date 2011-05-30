@@ -1,7 +1,7 @@
 %define abiquo_basedir /opt/abiquo
 
 Name:     abiquo-node-tools
-Version:  1.7.5
+Version:  1.8
 Release:  1%{?dist}%{?buildstamp}
 Summary:  Abiquo Node Tools 
 Group:    Development/System 
@@ -41,6 +41,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}
 
 %changelog
+* Mon May 30 2011 Sergio Rubio <srubio@abiquo.com> - 1.8-1
+- updated to 1.8
+
 * Thu Mar 17 2011 Sergio Rubio <srubio@abiquo.com> - 1.7.5-1
 - version bump
 - abiquo-node-check-state is now a python script
